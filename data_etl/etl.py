@@ -68,7 +68,7 @@ def context_cut(stopwords, sentence):
         cut_words_str = ','.join(cut_words_list)
     return cut_words_str, cut_words_list
 
-def do_data_etl(using_test_dataset=True):
+def do_data_etl(using_test_dataset=False):
     # 1.提取停用词
     stopwords = load_and_merge_stopwords()
 
